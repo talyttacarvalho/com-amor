@@ -1,15 +1,17 @@
-<h1>Com Amor</h1>
-<p>Com amor rails girls sp 2018</p>
+<h1>Com Am<img src="https://image.flaticon.com/icons/svg/1071/1071525.svg"  width="30" height="30"/>r</h1>
+
+<p>Visitas que transformam vidas.</p>
 <% link_to 'Com Amor', controller: 'posts' %>
 
-<%= link_to 'Novo post', new_post_path %>
+<%= link_to 'Novo post', new_post_path, class: 'btn btn-primary' %>
 
+<br>
+<br>
 
-
-<table>
+<table class="table">
   <tr>
     <th>Titulo:</th>
-    <th>Texto:</th>
+    <th colspan="4">Texto:</th>
   </tr>
 
   <% @posts.each do |post| %>
