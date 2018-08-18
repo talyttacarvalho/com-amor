@@ -1,5 +1,6 @@
-<h1> Publique aqui seu post </h1>
-<%= form_for :post, url: posts_path do |f| %>
+<h1> Editar post </h1>
+
+<%= form_for :post, url: post_path(@post), method: :patch do |f| %>
   <p>
     <%= f.label :title, "Título:" %><br>
     <%= f.text_field :title %>
